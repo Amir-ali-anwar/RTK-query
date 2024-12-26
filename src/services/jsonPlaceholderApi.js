@@ -8,7 +8,6 @@ export const jsonPlaceholderApi = createApi({
         getPosts: builder.query({ query: () => 'posts' }),
         createPost: builder.mutation({
             query: (newPost) => {
-                console.log(newPost);
                 return {
                     url: 'posts',
                     method: 'POST',
